@@ -1,0 +1,30 @@
+<h1>Aileen M. Fernandez</h1>
+
+<div class="box">
+  <table>
+    <tr>
+      <th>Name</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <th>Age</th>&nbsp;&nbsp;&nbsp;
+      <th>Action</th>&nbsp;
+    </tr><br>
+    <tr *ngFor="let user of users">
+      <td>{{ user.name }}</td>&nbsp;&nbsp;
+      <td>{{ user.age }}</td>&nbsp;&nbsp;
+      <td>
+        <button (click)="updateUser(user._id)">UPDATE</button>
+        <button (click)="deleteUser(user._id)">DELETE</button>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="box2">
+  <h2 style="font-family: Arial; color: gray;">User Information</h2>
+    <form (submit)="addUser()">
+      <label>Name</label>&nbsp;
+      <input type="text" #name="ngModel" name="userName" [(ngModel)]="userName" [class.invalid]="name.invalid && name.touched" required><br><br>
+      <label>Age</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" #age="ngModel" name="userAge" [(ngModel)]="userAge" [class.invalid]="age.invalid && age.touched" required><br><br>
+      <input type="submit" class="button" value="SUBMIT" [disabled]="name.invalid || age.invalid">
+    </form>
+</div>

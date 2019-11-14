@@ -1,0 +1,62 @@
+.invalid{
+    border: 1px solid red;
+}
+table{
+    padding: 10px;
+}
+th{
+    font-family: Arial;
+    font-size: 18px;
+    color: gray;
+}
+td{
+    font-family: Arial;
+    font-size: 15px;
+    color: gray;
+}
+label{
+    font-family: Arial;
+    font-size: 18px;
+}
+.box{
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    transform: translate(-50%,-50%);
+    background: #ffdead;
+}
+.box2{
+    padding-top: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 250px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    transform: translate(-50%,-50%);
+    background: #ffdead;
+}
+button{
+    height: 30px;
+    width: 80px;
+    font-size: 15px;
+    font-family: Arial;
+    color: white;
+    background-color: gray;
+}
+.button{
+    height: 30px;
+    width: 80px;
+    font-size: 18px;
+    font-family: Arial;
+    color: white;
+    background-color: gray;
+}
